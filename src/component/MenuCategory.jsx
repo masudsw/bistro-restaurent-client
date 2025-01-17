@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Menuitem from "../pages/shared/Menuitems/Menuitem";
 import Cover from "./Cover";
 
@@ -10,6 +11,11 @@ const MenuCategory = ({ item, title, coverImg }) => {
                 {item.map(item => (
                     <Menuitem key={item._id} item={item} />
                 ))}
+            </div>
+            <div className="flex justify-center items-center my-8">
+                <Link to='/order/:title'>
+                    <button className="btn btn-outline uppercase text-2xl border-0 border-b-4">Order your favarite food</button>
+                </Link>
             </div>
         </div>
     );

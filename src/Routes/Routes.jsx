@@ -5,7 +5,8 @@ import {
 import Main from "../Layout/Main";
 import Home from "../pages/Home/Home";
 import Menu from "../pages/menu/Menu";
-import Order from "../pages/menu/Order/Order";
+import Order from "../pages/Order/Order/Order";
+
 
 export const router = createBrowserRouter([
     {
